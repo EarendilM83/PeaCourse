@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Roboto+Slab&display=swap');
+
+.wrapper{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-wrapper {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-radius: 8px;
+    box-shadow: 9px 9px 31px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 9px 31px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 31px -5px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 0;
+    text-align: center;
+}
+
+form.signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label.signUp-labels{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: 10px 0;
+
+}
+input.signUp-inputs{
+    border-radius: 8px;
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.393);
+    margin-bottom: 10px;
+}
+
+button.signUpBTN{
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 16px;
+    border-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(58, 58, 170, 0.564);
+    color: white;
+    font-weight: 600;
+
+}
+
+input:focus{
+    border-color: black;
+}
+
+button:hover{
+    background-color: blue;
+}

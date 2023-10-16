@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+
+@font-face {
+    src: url(../fonts/font.woff2);
+    font-family: 'BPG-nino'
+}
+
+/* nav {
+    background-color: blue;
+}
+
+nav ul li {
+    color: white;
+}
+
+header nav {
+    background-color: rgb(47, 255, 0);
+}
+
+
+
+div {
+    border: 2px solid red;
+}
+
+.text-wrapper {
+    border: 4px solid blue;
+    color: red;
+}
+
+#fancy{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+} 
+
+*/
+
+/* div.logo-container img {
+    width: 180px;
+} */
+
+.header-logo {
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+}
+li{
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(162, 15, 162);
+    transition: all 0.2s ease-in-out;
+  
+}
+
+a:hover{
+    background-color: rgba(162, 27, 15, 0.766);
+    box-shadow: 2px 2px 10px rgb(165, 48, 203);
+}
+
+p{
+    font-family: BPG-nino;
+}
+
+

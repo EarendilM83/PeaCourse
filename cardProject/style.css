@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cards-wrapper {
+    background-color: #DDEEFC;
+;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.card-holder{
+    width: 410px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 5px 8px 1px rgba(0, 0, 0, 0.114);
+    
+}
+
+.image-wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px;
+}
+.card-featured-img{
+    height: 239px;
+    width: 381px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+h4, p, h3, .time-slot-wrapper div, .rating-num span {
+    font-family: 'Inter', sans-serif;
+}
+
+h4 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rating-num {
+    display: flex;
+    align-items: center;
+}
+.star-wrapper{
+    margin-right: 11px;
+}
+.rating-num span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+.time-slot-wrapper div {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.separator {
+    border: 1px solid #DADDE4;
+    margin: 16px 24px;
+}
+
+h2, .main-content-wrapper, .form-wrapper {
+    margin: 0 24px;
+}
+.rating-wrapper{
+    margin: 0 24px 16px 24px;
+
+}
+
+.star-wrapper img {
+    height: 11px;
+}
+
+h4{
+    margin-bottom: 8px;
+}
+
+.time-slot-wrapper{
+    display: flex;
+    
+}
+
+.time-slot {
+    margin: 0 6px;
+    padding: 4px 12px;
+    border: 1px solid #D3D6DC;
+    border-radius: 20px;
+}
+
+.time-slot:hover{
+     border: 1px solid #4C5ADC;
+     color: #4C5ADC
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header{
     display: flex;
     justify-content: space-between;
@@ -63,4 +64,28 @@ a:nth-child(1):hover{
     background-color: #88888875;
     padding: 10px 15px;
     border-radius: .9rem
+=======
+.logo-wrapper{
+    width: 8.4rem;
+}
+
+.menu-wrapper_item svg{
+    width: 24px;
+}
+
+.menu-wrapper_item svg path {
+    fill: #00000099;
+}
+
+.menu-wrapper_item span {
+    color: #00000099;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+>>>>>>> 0a1663a20a9baad99a05aec2e8ad7b08a42ce476
 }
