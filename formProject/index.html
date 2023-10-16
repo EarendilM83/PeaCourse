@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>Form Project</title>
+</head>
+<body>
+    <form action="" data-multi-step>
+
+        <div id="step1" class="card" data-step="1">
+            <h3 class="step-title">Step 1 - Generic information</h3>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="button" onclick="nextStep(2)">Next</button>
+        </div>
+
+        <div id="step2" class="card" data-step="2">
+            <h3 class="step-title">Step 2 - Generic information</h3>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="address" name="address" id="address">
+            </div>
+
+            <div class="form-group">
+                <label for="citySelect">City</label>
+                <select name="city" id="citySelect">
+                    <option value="" disabled selected>select the city</option>
+                    <option value="">Select City</option>
+                    <option value="Akhaldaba">Akhaldaba</option>
+                    <option value="Batumi">Batumi</option>
+                    <option value="Chakvi">Chakvi</option>
+                    <option value="Dioknisi">Dioknisi</option>
+                    <option value="Khelvachauri">Khelvachauri</option>
+                    <option value="Khulo">Khulo</option>
+                    <option value="Kobuleti">Kobuleti</option>
+                    <option value="Makhinjauri">Makhinjauri</option>
+                    <option value="Ochkhamuri">Ochkhamuri</option>
+                    <option value="Shuakhevi">Shuakhevi</option>
+                    <option value="Tsikhisdziri">Tsikhisdziri</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" name="zipcode" id="zipcode">
+            </div>
+            <button type="button" onclick="nextStep(1)">Previous</button>
+            <button type="button" onclick="nextStep(3)">Next</button>
+        </div>
+        <div id="step3" class="card" data-step="3">
+            <h3 class="step-title">Step 2 - Generic information</h3>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="surname" name="surname" id="surname">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone">
+            </div>
+            <button type="button" onclick="nextStep(2)">Previous</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
