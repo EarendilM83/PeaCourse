@@ -1,0 +1,23 @@
+.logo-wrapper{
+    width: 8.4rem;
+}
+
+.menu-wrapper_item svg{
+    width: 24px;
+}
+
+.menu-wrapper_item svg path {
+    fill: #00000099;
+}
+
+.menu-wrapper_item span {
+    color: #00000099;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+}
