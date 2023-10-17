@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .card-garden {
     background-color: rgb(13, 13, 13);
@@ -26,9 +27,51 @@ box-shadow:
     0 0 60px 10px #ffffff52,
     0 0 100px 20px rgba(255, 0, 255, 0.338),
     0 0 140px 30px rgba(0, 255, 255, 0.439);
-    transition: rotate 700ms ease;
+    transition:rotate 700ms ease;
+    transform-style: preserve-3d;
 }
 
+
+.image-wrapper::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    backdrop-filter: blur(7px);
+    background-image: radial-gradient(circle, transparent 100px, rgba(61, 145, 116, 0.333));
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.image-wrapper:hover::before {
+    opacity: 1;
+}
 .image-wrapper:hover{
-    rotate: x 30deg;
+    /* rotate: x 30deg; */
+    rotate: x 20deg;
+}
+
+/* .image-wrapper::after{
+    content:"";
+    width: 300px;
+    height: 400px;
+    background-image: url(../images/dracula-overlay.png);
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top:0;
+} */
+
+
+.inner-logo{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    perspective: 1000px;
+    
+}
+.inner-logo img{
+    transition: 0.3s ease;
+    width: 200px;
 }
