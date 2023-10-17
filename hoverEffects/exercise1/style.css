@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-garden {
+    background-color: rgb(13, 13, 13);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.image-wrapper{
+    /* background-color: aqua; */
+    background-image: url(../images/dracula.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    /* box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.435);
+-webkit-box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.437);
+-moz-box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.345); */
+box-shadow:
+    0 0 60px 10px #ffffff52,
+    0 0 100px 20px rgba(255, 0, 255, 0.338),
+    0 0 140px 30px rgba(0, 255, 255, 0.439);
+    transition: rotate 700ms ease;
+}
+
+.image-wrapper:hover{
+    rotate: x 30deg;
+}
