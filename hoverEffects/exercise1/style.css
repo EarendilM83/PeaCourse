@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+    position: relative;
 }
 
 .image-wrapper{
@@ -74,4 +75,12 @@ box-shadow:
 .inner-logo img{
     transition: 0.3s ease;
     width: 200px;
+}
+
+#overlay{
+    transition: opacity ease 0.5s;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    /* transform: translateY(300px); */
 }

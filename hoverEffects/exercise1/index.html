@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="card-garden">
+         <img src="../images/dracula-overlay.png" id="overlay" alt="">
         <div class="image-wrapper" id="imageWrapper">
-            <img src="../images/dracula-overlay.png" alt="">
             <div class="inner-logo" >
                 <img id="innerLogo" src="../images/priest.png" alt="">
             </div>
@@ -20,6 +20,9 @@ document.getElementById('imageWrapper').addEventListener('mouseenter', function(
     document.getElementById('innerLogo').style.transition = 'transform rotate 2s ease';
     document.getElementById('innerLogo').style.transform = 'scale(1.2)';
     document.getElementById('innerLogo').style.rotate = 'x 30deg';
+    document.getElementById('overlay').style.opacity = '1';
+    document.getElementById('overlay').style.transform = 'translateY(0)';
+
 
 });
 
@@ -27,6 +30,10 @@ document.getElementById('imageWrapper').addEventListener('mouseleave', function(
     document.getElementById('innerLogo').style.transition = 'transform rotate 2s ease';
     document.getElementById('innerLogo').style.transform = 'scale(1)';
     document.getElementById('innerLogo').style.rotate = 'x 0deg';
+    document.getElementById('overlay').style.opacity = '0';
+    document.getElementById('overlay').style.transform = 'translateY(300px)';
+
+
 
 });
 
