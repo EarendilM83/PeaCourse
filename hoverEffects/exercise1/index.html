@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="card-garden">
-         <img src="../images/dracula-overlay.png" id="overlay" alt="">
-        <div class="image-wrapper" id="imageWrapper">
-            <div class="inner-logo" >
-                <img id="innerLogo" src="../images/priest.png" alt="">
-            </div>
-        </div>
+    <a href="#" alt="Mythrill" target="_blank">
+  <div class="card">
+    <div class="wrapper">
+      <img src="../images/yoda.png" class="cover-image" />
     </div>
-    <script>
-document.getElementById('imageWrapper').addEventListener('mouseenter', function() {
-    document.getElementById('innerLogo').style.transition = 'transform rotate 2s ease';
-    document.getElementById('innerLogo').style.transform = 'scale(1.2)';
-    document.getElementById('innerLogo').style.rotate = 'x 30deg';
-    document.getElementById('overlay').style.opacity = '1';
-    document.getElementById('overlay').style.transform = 'translateY(0)';
+    <img src="../images/Star_Wars_Logo..png" class="title" />
+    <img src="../images/yoda-character.png" class="character" />
+  </div>
+</a>
 
-
-});
-
-document.getElementById('imageWrapper').addEventListener('mouseleave', function() {
-    document.getElementById('innerLogo').style.transition = 'transform rotate 2s ease';
-    document.getElementById('innerLogo').style.transform = 'scale(1)';
-    document.getElementById('innerLogo').style.rotate = 'x 0deg';
-    document.getElementById('overlay').style.opacity = '0';
-    document.getElementById('overlay').style.transform = 'translateY(300px)';
-
-
-
-});
-
-
-
-
-    </script>
+<a href="#" alt="Mythrill" target="_blank">
+  <div class="card">
+    <div class="wrapper">
+      <img src="../images/avatar.webp" class="cover-image" />
+    </div>
+    <img src="../images/avatarlogo.png" class="title" />
+    <img src="../images/avatar-removebg.png" class="character avatar" />
+  </div>
+</a>
+<a href="#" alt="Mythrill" target="_blank">
+  <div class="card">
+    <div class="wrapper">
+      <img src="../images/dracula.png" class="cover-image" />
+    </div>
+    <img src="../images/priest.png" class="title" />
+    <img src="../images/dracula-overlay.png" class="character dracula" />
+  </div>
+</a>
 </body>
 </html>

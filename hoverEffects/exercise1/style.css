@@ -1,86 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+    --card-height: 350px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+* {
     box-sizing: border-box;
 }
-.card-garden {
-    background-color: rgb(13, 13, 13);
+body {
+    width: 100vw;
     height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px;
+    background: #191c29;
+}
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
 }
 
-.image-wrapper{
-    /* background-color: aqua; */
-    background-image: url(../images/dracula.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 500px;
-    border-radius: 8px;
-    /* box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.435);
--webkit-box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.437);
--moz-box-shadow: 3px 2px 24px 3px rgba(4, 187, 228, 0.345); */
-box-shadow:
-    0 0 60px 10px #ffffff52,
-    0 0 100px 20px rgba(255, 0, 255, 0.338),
-    0 0 140px 30px rgba(0, 255, 255, 0.439);
-    transition:rotate 700ms ease;
-    transform-style: preserve-3d;
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.image-wrapper::before{
-    content: "";
+.wrapper {
+    transition: all 0.5s;
     position: absolute;
-    width: 300px;
-    height: 500px;
-    backdrop-filter: blur(7px);
-    background-image: radial-gradient(circle, transparent 100px, rgba(61, 145, 116, 0.333));
-    transition: opacity 0.3s ease;
-    opacity: 0;
+    width: 100%;
+    height: var(--card-height);
+    z-index: -1;
 }
-.image-wrapper:hover::before {
+
+.card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+);
+}
+.wrapper::after {
+bottom: 0;
+opacity: 1;
+background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+);
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
     opacity: 1;
 }
-.image-wrapper:hover{
-    /* rotate: x 30deg; */
-    rotate: x 20deg;
+
+.card:hover .wrapper::after {
+    height: 120px;
+}
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+.card:hover .title {
+transform: translate3d(0%, -50px, 100px);
 }
 
-/* .image-wrapper::after{
-    content:"";
-    width: 300px;
-    height: 400px;
-    background-image: url(../images/dracula-overlay.png);
-    background-size: cover;
-    background-position: top;
-    position: absolute;
-    top:0;
-} */
-
-
-.inner-logo{
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 20px;
-    perspective: 1000px;
-    
-}
-.inner-logo img{
-    transition: 0.3s ease;
-    width: 200px;
-}
-
-#overlay{
-    transition: opacity ease 0.5s;
+.character {
+    width: 100%;
     opacity: 0;
+    transition: all 0.5s;
     position: absolute;
-    z-index: 100;
-    /* transform: translateY(300px); */
+    z-index: -1;
+}
+
+.card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+.dracula, .avatar{
+    width: 80%;
+    top: 80px;
+    /* box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75); */
 }
